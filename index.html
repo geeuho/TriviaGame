@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang ="en">
+
+<head>
+	<title> TRIVIA GAME!! </title>
+</head>
+
+<body>
+
+	<h1> TRIVIA GAME!! </h1>
+
+	<div id = "container">
+
+		<div id = "time"> </div>
+
+		<div id = "question1">What is the world's largest ocean</div>
+
+		<div id = "question2">"Which NBA team won the championship in 2005</div>
+
+		<div id = "question3">"Which Pokemon is #2 in the list of the original 150 Pokemon?"</div>
+
+		<div id = "question4">"What year did the first Iphone get released?"</div>
+
+		<div id = "question5">"In 1783, the first free flight of a hot air balloon carrying a human occured in what city?"</div>
+
+
+
+
+		<div id = "choose"> </div>
+		<button id="submit">Submit</button>  
+		
+
+	</div>
+
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	 <script type = "text/javascript">
+
+	 	var questions = ["What is the world's largest ocean", "Which NBA team won the championship in 2005", "Which Pokemon is #2 in the list of the original 150 Pokemon?", "What year did the first Iphone get released?", "In 1783, the first free flight of a hot air balloon carrying a human occured in what city?", "In what country would you find the Yellow River?", "What are the first three words of the bible?", "How many US Supreme Court justices are there?", "Lambeau Field is the home field of which National Football League team?", "In what year was the Nintendo 64 officially released?"];
+	 	var answers = ["Pacific Ocean", "San Antonio Spurs", "Bulbasaur", "2007", "Paris, France", "China", "In the beginning", "9", "Green Bay Packers", "1996"];
+	 	var answerarray = {
+ 			("Pacific Ocean","Indian Ocean", "Atlantic Ocean", "Southern Ocean");
+  			("San Antonio Spurs", "Houston Rockets", "Golden State Warriors", "Cleveland Cavaliers");
+  			("Bulbusaur", "Pikachu", "Ivysaur", "Blastoise");
+  			("2006", "2007", "2005", "2004");
+  			("Paris", "Berlin", "Rome", "London")
+
+  			}
+  
+	 	
+	 	var quest = $("#question");
+	 	var choose = $("#choose");
+	 	var quest2 = [];
+
+
+	 	//$(function(){
+			//$("#s_timer").countdowntimer({
+				//seconds : 60‚
+                //size : "lg"
+			//});
+		//});
+		var minutes = 1;
+		var seconds = minutes * 60;
+
+		function convertIntToTime (num) {
+    		var mins = Math.floor(num/60);
+    		var secs = num % 60;
+    		var timerOutput = (mins < 10 ? "0" : "" ) + mins + ":" + (secs < 10 ? "0" : "" ) + secs;
+    		return(timerOutput);
+		}
+
+		var countdown = setInterval(function() {
+    		var current = convertIntToTime(seconds); // set the display of the time
+    		$('#time').html(current); // place the display time in the div
+    			if(seconds == 0) { 
+        			clearInterval(countdown); // stop the time if seconds = 0
+        // other function calls here
+    		}
+    		seconds--; // subtract a second
+		}, 1000);
+
+	 	function questioner(){
+	 		
+	 		
+	 		var div = $("<li></li>");
+			for (i = 0; i < questions.length; i++){
+				div.text(questions[i]);
+				//div.html(join.(question[i]));
+
+				quest2.push(div);
+				$("<br>");
+				//quest2.push(div);
+			
+
+	 		 }
+
+	 		quest.append(quest2);
+
+	 	}
+
+	 	function currentarray(){
+	 		for (i = 0; i< array.length; i++)
+	 			currentarray = array[i]
+
+	 	}
+	
+
+
+	 	var currentarray = []
+	 	function answer(){
+	 		
+    		var greetingOptions = $('#dvOptions');
+    		greetingOptions.empty();
+   				
+    		
+    		var arrayValues = ["Good Morning", "Good Afternoon", "Good Evening", "Good Night"];
+
+    		for (var i = 0; answer1.length; i++) {
+        		
+        	{
+            greetingOptions.append($('<input type="radio" name="greetings" value="' + i + '" checked>' + arrayValues[i] + '</input><br />'));
+        	}
+       	 	greetingOptions.append($('<input type="radio" name="greetings" value="' + i + '">' + arrayValues[i] + '</input>'));
+    		}
+		};
+
+		$('#btnSelect').on('click', function (e) {
+    		var testValue = $('#dvOptions input:radio:checked').val();
+    		var testText = $('#dvOptions input:radio:checked')[0].nextSibling.data;
+    	
+		});
+	 		choose.append(answer);
+	 	
+	 		
+	 	
+	 	
+	 </script>
+	</body>
+	</html>
+
