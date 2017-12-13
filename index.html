@@ -13,20 +13,87 @@
 
 		<div id = "time"> </div>
 
-		<div id = "question1">What is the world's largest ocean</div>
+		<div id = "question1">What is the world's largest ocean?</div>
+		<div id = "answer1">
+			<input type="radio" name="radiobutton[0]" value="a">Atlantic Ocean<br>
+			<input type="radio" name="radiobutton[0]" value="b">Indian Ocean<br>
+			<input type="radio" name="radiobutton[0]" value="c">Pacific Ocean<br>
+			<input type="radio" name="radiobutton[0]" value="d">Southern Ocean<br>
+		</div>
 
-		<div id = "question2">"Which NBA team won the championship in 2005</div>
+		<div id = "question2">"Which NBA team won the championship in 2005?</div>
+		<div id = "answer2">
+			<input type="radio" name="radiobutton[1]" value="a">Cleveland Cavaliers<br>
+			<input type="radio" name="radiobutton[1]" value="b">Houston Rockets<br>
+			<input type="radio" name="radiobutton[1]" value="c">Golden State Warriors<br>
+			<input type="radio" name="radiobutton[1]" value="d">San Antonio Spurs<br>
+		</div>
 
 		<div id = "question3">"Which Pokemon is #2 in the list of the original 150 Pokemon?"</div>
+		<div id = "answer3">
+			<input type="radio" name="radiobutton[2]" value="a">Bulbasaur<br>
+			<input type="radio" name="radiobutton[2]" value="b">Ivysaur<br>
+			<input type="radio" name="radiobutton[2]" value="c">Charmander<br>
+			<input type="radio" name="radiobutton[2]" value="d">Squirtle<br>
+		</div>
 
 		<div id = "question4">"What year did the first Iphone get released?"</div>
+		<div id = "answer4">
+			<input type="radio" name="radiobutton[3]" value="a">2005<br>
+			<input type="radio" name="radiobutton[3]" value="b">2006<br>
+			<input type="radio" name="radiobutton[3]" value="c">2007<br>
+			<input type="radio" name="radiobutton[3]" value="d">2008<br>
+		</div>
 
 		<div id = "question5">"In 1783, the first free flight of a hot air balloon carrying a human occured in what city?"</div>
+		<div id = "answer5">
+			<input type="radio" name="radiobutton[4]" value="a">London<br>
+			<input type="radio" name="radiobutton[4]" value="b">Paris<br>
+			<input type="radio" name="radiobutton[4]" value="c">Berlin<br>
+			<input type="radio" name="radiobutton[4]" value="d">Rome<br>
+		</div>
 
+		<div id = "question6">"In what country would you find the Yellow River?"</div>
+		<div id = "answer6">
+			<input type="radio" name="radiobutton[5]" value="a">China<br>
+			<input type="radio" name="radiobutton[5]" value="b">Paris<br>
+			<input type="radio" name="radiobutton[5]" value="c">Berlin<br>
+			<input type="radio" name="radiobutton[5]" value="d">Rome<br>
+		</div>
 
+		<div id = "question7">"What are the first three words of the bible?"</div>
+		<div id = "answer7">
+			<input type="radio" name="radiobutton[6]" value="a">Blessed is the man that walketh not in the counsel of the ungodly<br>
+			<input type="radio" name="radiobutton[6]" value="b">Jesus is my homeboy<br>
+			<input type="radio" name="radiobutton[6]" value="c">In the beginning<br>
+			<input type="radio" name="radiobutton[6]" value="d">And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy my brothers.<br>
+		</div>
 
+		<div id = "question8">"How many US Supreme Court justices are there?"</div>
+		<div id = "answer8">
+			<input type="radio" name="radiobutton[7]" value="a">6<br>
+			<input type="radio" name="radiobutton[7]" value="b">7<br>
+			<input type="radio" name="radiobutton[7]" value="c">8<br>
+			<input type="radio" name="radiobutton[7]" value="d">9<br>
+		</div>
 
-		<div id = "choose"> </div>
+		<div id = "question9">"Lambeau Field is the home field of which National Football League team?"</div>
+		<div id = "answer9">
+			<input type="radio" name="radiobutton[8]" value="a">New York Giants<br>
+			<input type="radio" name="radiobutton[8]" value="b">Green Bay Packers<br>
+			<input type="radio" name="radiobutton[8]" value="c">New England Patriots<br>
+			<input type="radio" name="radiobutton[8]" value="d">Philadelphia Eagles<br>
+		</div>
+
+		<div id = "question10">"In what year was the Nintendo 64 officially released?"</div>
+		<div id = "answer10">
+			<input type="radio" name="radiobutton[9]" value="a">1995<br>
+			<input type="radio" name="radiobutton[9]" value="b">1996<br>
+			<input type="radio" name="radiobutton[9]" value="c">1997<br>
+			<input type="radio" name="radiobutton[9]" value="d">1998<br>
+		</div>
+
+		
 		<button id="submit">Submit</button>  
 		
 
@@ -38,31 +105,16 @@
 
 	 	var questions = ["What is the world's largest ocean", "Which NBA team won the championship in 2005", "Which Pokemon is #2 in the list of the original 150 Pokemon?", "What year did the first Iphone get released?", "In 1783, the first free flight of a hot air balloon carrying a human occured in what city?", "In what country would you find the Yellow River?", "What are the first three words of the bible?", "How many US Supreme Court justices are there?", "Lambeau Field is the home field of which National Football League team?", "In what year was the Nintendo 64 officially released?"];
 	 	var answers = ["Pacific Ocean", "San Antonio Spurs", "Bulbasaur", "2007", "Paris, France", "China", "In the beginning", "9", "Green Bay Packers", "1996"];
-	 	var answerarray = {
- 			("Pacific Ocean","Indian Ocean", "Atlantic Ocean", "Southern Ocean");
-  			("San Antonio Spurs", "Houston Rockets", "Golden State Warriors", "Cleveland Cavaliers");
-  			("Bulbusaur", "Pikachu", "Ivysaur", "Blastoise");
-  			("2006", "2007", "2005", "2004");
-  			("Paris", "Berlin", "Rome", "London")
-
-  			}
-  
-	 	
+	  	
 	 	var quest = $("#question");
-	 	var choose = $("#choose");
-	 	var quest2 = [];
-
-
-	 	//$(function(){
-			//$("#s_timer").countdowntimer({
-				//seconds : 60‚
-                //size : "lg"
-			//});
-		//});
+	 	var correctarray = ["c", "d", "b", "c", "b", "a", "c", "d", "b", "b"];
+	 	var correct = 0;
+	 	var incorrect = 0;
 		var minutes = 1;
 		var seconds = minutes * 60;
 
-		function convertIntToTime (num) {
+
+		function timer (num) {
     		var mins = Math.floor(num/60);
     		var secs = num % 60;
     		var timerOutput = (mins < 10 ? "0" : "" ) + mins + ":" + (secs < 10 ? "0" : "" ) + secs;
@@ -70,68 +122,44 @@
 		}
 
 		var countdown = setInterval(function() {
-    		var current = convertIntToTime(seconds); // set the display of the time
+    		var current = timer(seconds); // set the display of the time
     		$('#time').html(current); // place the display time in the div
     			if(seconds == 0) { 
-        			clearInterval(countdown); // stop the time if seconds = 0
-        // other function calls here
+        			clearInterval(countdown); 
+        			alert("Time's Up! You got " + correct + " answers correct and " + incorrect +" answers incorrect!")
     		}
     		seconds--; // subtract a second
 		}, 1000);
 
-	 	function questioner(){
-	 		
-	 		
-	 		var div = $("<li></li>");
-			for (i = 0; i < questions.length; i++){
-				div.text(questions[i]);
-				//div.html(join.(question[i]));
 
-				quest2.push(div);
-				$("<br>");
-				//quest2.push(div);
+		function answerarray (e) {
+
 			
+    		var testValue = [$('#answer1 input:radio:checked').val(), $('#answer2 input:radio:checked').val(), $('#answer3 input:radio:checked').val(), $('#answer4 input:radio:checked').val(), $('#answer5 input:radio:checked').val(), $('#answer6 input:radio:checked').val(), $('#answer7 input:radio:checked').val(), $('#answer8 input:radio:checked').val(), $('#answer9 input:radio:checked').val(), $('#answer10 input:radio:checked').val()]
+    		//var testText = $('.answer input:radio:checked')[0].nextSibling.data;
+    		console.log(testValue);
 
-	 		 }
-
-	 		quest.append(quest2);
-
-	 	}
-
-	 	function currentarray(){
-	 		for (i = 0; i< array.length; i++)
-	 			currentarray = array[i]
-
-	 	}
-	
-
-
-	 	var currentarray = []
-	 	function answer(){
-	 		
-    		var greetingOptions = $('#dvOptions');
-    		greetingOptions.empty();
-   				
+    		for (i = 0; i < correctarray.length; i++){
     		
-    		var arrayValues = ["Good Morning", "Good Afternoon", "Good Evening", "Good Night"];
+    			if (testValue[i] === correctarray[i]){
+    				$(correct);
+    				correct ++;
 
-    		for (var i = 0; answer1.length; i++) {
-        		
-        	{
-            greetingOptions.append($('<input type="radio" name="greetings" value="' + i + '" checked>' + arrayValues[i] + '</input><br />'));
-        	}
-       	 	greetingOptions.append($('<input type="radio" name="greetings" value="' + i + '">' + arrayValues[i] + '</input>'));
+    			} else {
+    				$(incorrect);
+    				incorrect ++;;
+    			}
+
     		}
+    		
+    	 	alert ("You got " + correct + " answers correct and " + incorrect +" answers incorrect!");
+	 		
 		};
 
-		$('#btnSelect').on('click', function (e) {
-    		var testValue = $('#dvOptions input:radio:checked').val();
-    		var testText = $('#dvOptions input:radio:checked')[0].nextSibling.data;
-    	
-		});
-	 		choose.append(answer);
-	 	
-	 		
+    		
+	 	$('#submit').on('click', answerarray)
+
+
 	 	
 	 	
 	 </script>
